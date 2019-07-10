@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-p{
-    font-size: 16px;
-    text-align: center;
-}
-
 
 /* Extra reseting*/
 img{
@@ -22,14 +17,32 @@ html {
     box-sizing: inherit;
   }
 
+/* Basic settings for the page */
+p{
+    font-size: 16px;
+    text-align: center;
+}
+
 
 html body{
     font-family: 'Raleway', Arial, sans-serif;
-    font-weight:500;
-    font-style:normal;
+    font-weight:400;
+    /* font-style:normal; */
     color:#2d2d2d;
 }
 
+h1, h2, h3{
+    font-family:'Playfair Display', Arial, sans-serif;
+    font-weight:400;
+    color:#2d2d2d;
+    /* font-style:normal; */
+}
+
+a:link {
+    text-decoration: none;
+    line-height: 1.5;
+  }
+/* Header with the logo,links and cart icon  */
 .aloha-logo{
     flex-basis: 150px;
 }
@@ -53,9 +66,8 @@ flex-basis: 50px;
     order:3;
     text-align: center;
     
-    
-    
 }
+
 .links li{
     display:inline;
     font-size:18px;
@@ -64,24 +76,18 @@ flex-basis: 50px;
     margin-left: 0px;
     text-decoration: none;
     
-   
-
 }
-a{
-    color:red;
-   
 
+a{ 
+    color:#e2574c;
+   
   }
   
 a:hover{
     color:#b64036;
   }
 
-  h1, h2, h3{
-      font-family:'Playfair Display', Arial, sans-serif;
-      font-weight:500;
-      font-style:normal;
-  }
+  /* Banner section */
 .hero-banner{
     background: 
       
@@ -97,17 +103,22 @@ a:hover{
 .container{
     max-width:1240px;
     margin: 0 auto;
-
-   
-
 }
 
-.banner-text{
-    line-height: 1;
-    text-align: center;
-    top: 50%;
+.hero-banner p {
+    /* 
     
-
+     */
+    
+    margin:0, auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /* line-height: 1; */
+    
+     
 }
 
 .new-collection{
@@ -118,16 +129,19 @@ a:hover{
    
     color:white;
     text-transform: uppercase;
+     padding:50px;  
     
     
 }
 
 .season{
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
     color:white;
    
 }
+
+/* About section */
 
   .italic{ 
     margin: 30px auto;  
@@ -144,14 +158,17 @@ a:hover{
 }
 
 .about{
-
-    font-size: 1.5rem;
+    color: #2d2d2d;
+    font-family: Raleway Web,sans-serif;
+    font-size: 18px;
+    line-height: 2;
     margin: 20px auto;
     height: 70px;
     padding: 1rem 0;
+    
 
 }
-
+/* Categories section */
 .categories{
   padding: 0;
   margin: 0;
@@ -193,7 +210,7 @@ a:hover{
   .items-men {
     background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
     url(images/mens-category.jpg) no-repeat 50% ;
-     background-size: cover,cover;
+    background-size: cover,cover;
      /* height:300px; */
     /* flex: 2 0 100%;*/
      flex-grow: 2;
@@ -265,7 +282,9 @@ a:hover{
     max-width: 100%;
   }
 
+/* Most loved Section */
 
+/* Sign-up banner Section */
 .signup-banner{
     background: 
       
@@ -298,22 +317,45 @@ a:hover{
 #signup-form{
 
     display: block;
-    margin: 2rem auto ;
+    margin: 2rem auto 0 ;
     position: relative;
     width: 90%;
     text-align: center;
 
 }  
 
+input[type=submit] {
+    border: none;
+    border-radius: 15px;
+    background-color: #e2574c;
+    color: white;
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    width:40%;
+    padding-right: 20px;
+}
+
+/* Footer Section */
 .footer-banner{
 
     background-color:#242424;
     color:white;
     font-family: Playfair Display Web,serif;
     padding: 4rem 0;
+    height: 30vw;
     /* text-align: left; */
 }
 
+.footer-banner p{
+    text-align:left;
+}
+.footer-banner p a{
+    text-decoration: underline;
+}
 
 .address{
     color:#969696;
@@ -321,7 +363,7 @@ a:hover{
 footer a{
 
     color:white;
-
+   
 }
 
 footer a:hover{
@@ -344,9 +386,15 @@ footer a:hover{
 }
 
 .social li{
-   
+   text-decoration: none;
 }
 .network {
     display: inline;
     line-height: 1.5;
 }
+
+/* max width:1240px */
+@media screen and (min-width: ) {
+    
+  }
+  
