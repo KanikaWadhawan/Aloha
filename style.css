@@ -48,24 +48,23 @@ a:link {
 }
 
 .head{
-
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
     align-content: center;
+    padding: 16px 2% 8px 2%;
 }
 
 .cart-icon{
-flex-basis: 50px;
+    flex-basis: 50px;
+    order: 3;
 }
 
 .nav-site{
-
-    flex-basis:100%;
-    order:3;
+    align-self: center;
+    flex-basis:58%;
     text-align: center;
-    
 }
 
 .links li{
@@ -75,6 +74,7 @@ flex-basis: 50px;
     padding: 1px 2px;
     margin-left: 0px;
     text-decoration: none;
+    margin: 16px;
     
 }
 
@@ -90,36 +90,42 @@ a:hover{
   /* Banner section */
 .hero-banner{
     background: 
-      
       linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
       url(images/banner-girl.png)  no-repeat center 70px ,
       url(images/flower-bkgd.jpg) repeat-x center top ;
       background-size: cover,contain, cover;
       height: 400px;
-    
-   
+}
+
+.align-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 24px;
 }
 
 .container{
-    max-width:1240px;
-    margin: 0 auto;
+    max-width: 1240px;
+    /* margin: 0 auto; */
+    margin: 0 7%;
 }
 
-.hero-banner p {
+
+/* .hero-banner p {
     /* 
     
      */
     
-    margin:0, auto;
+    /* margin:0, auto;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     /* line-height: 1; */
     
      
-}
+/* }  */
 
 .new-collection{
     text-align: center;
@@ -129,7 +135,7 @@ a:hover{
    
     color:white;
     text-transform: uppercase;
-     padding:50px;  
+     /* padding:50px;   */
     
     
 }
@@ -346,7 +352,7 @@ input[type=text] {
     color:white;
     font-family: Playfair Display Web,serif;
     padding: 4rem 0;
-    height: 30vw;
+    height: 20vw;
     /* text-align: left; */
 }
 
@@ -375,6 +381,7 @@ footer a:hover{
     display:flex;
     justify-content: space-between;
     text-align: left;
+    padding: 0 2%;
 }
 
 .social{
@@ -393,8 +400,46 @@ footer a:hover{
     line-height: 1.5;
 }
 
+.wrapper {
+    text-align: center;
+}
+
 /* max width:1240px */
-@media screen and (min-width: ) {
-    
+@media screen and (min-width:600px ) {
+    html{
+        font-size:16px;
+    }
+
+    .head{
+        flex-wrap:nowrap;
+    }
+
+
+    /* .wrapper{
+        max-width:720px;
+    } */
+
+    .signup-form{
+        width:67%;
+    }
+
+    .footer-banner {
+        text-align: left;
+    }
+    .footer-banner .container{
+    display: flex;
+    justify-content: space-between;
+
+    }
+
+    .footer-banner .social{
+        margin-top: 0;
+        padding-right: 2rem;
+    }
+
+    .social li{
+        display:block;
+    }
+
   }
   
