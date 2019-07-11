@@ -331,10 +331,16 @@ a:hover{
 }  
 
 input[type=submit] {
-    border: none;
+     border: none;
     border-radius: 15px;
     background-color: #e2574c;
-    color: white;
+    color: white; 
+    bottom: 0.25rem;
+    margin-right: 0px;
+    position: absolute;
+    top:0.25rem;
+    left:35.95rem;
+    padding:0.25rem 1.5rem;
 }
 
 input[type=text] {
@@ -342,7 +348,13 @@ input[type=text] {
     border-radius: 15px;
     color: white;
     width:40%;
-    padding-right: 20px;
+    /* padding-right: 20px;  */
+
+    height:39px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    padding-right: 150px;
 }
 
 /* Footer Section */
