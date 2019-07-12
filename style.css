@@ -13,9 +13,9 @@ html {
     box-sizing: border-box;
   }
 
-  *, *:before, *:after {
+  /* *, *:before, *:after {
     box-sizing: inherit;
-  }
+  } */
 
 /* Basic settings for the page */
 p{
@@ -106,12 +106,17 @@ a:hover{
     margin-bottom: 24px;
 }
 
-.container{
+/* .container{
     max-width: 1240px;
     /* margin: 0 auto; */
-    margin: 0 7%;
-}
+    /* margin: 0 7%; */
 
+/* } */
+
+.wrapper.container {
+    margin: 0 auto;
+    padding: 0 2%;
+}
 
 /* .hero-banner p {
     /* 
@@ -330,10 +335,11 @@ a:hover{
     height: 70px;
     padding: 1rem 0;
     color:white;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,0.8);
 
 }
 
-#signup-form{
+.sign-up{
 
     display: block;
     margin: 2rem auto 0 ;
@@ -344,30 +350,36 @@ a:hover{
 }  
 
 input[type=submit] {
-     border: none;
-    border-radius: 15px;
+     border:0;
+    border-radius: 25px;
     background-color: #e2574c;
     color: white; 
-    bottom: 0.25rem;
-    margin-right: 0px;
+    /* bottom: 0.25rem; */
+    /* margin-right: 0px; */
     position: absolute;
     top:0.25rem;
-    left:35.95rem;
-    padding:0.25rem 1.5rem;
+    right:0.25rem;
+    /* left:35.95rem; */
+    padding:0.5rem 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
 }
 
 input[type=text] {
-    border: none;
-    border-radius: 15px;
+    border:0;
+    border-radius: 25px;
     color: white;
-    width:40%;
+    width:100%;
     /* padding-right: 20px;  */
 
-    height:39px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 28px;
+    /* line-height:32px; */
+    /* padding-top: 8px; */
+    /* padding-bottom: 8px; */
+    /* padding-left: 28px; */
     padding-right: 150px;
+    padding: 0.75rem 1.85rem;
+    outline: none;
 }
 
 /* Footer Section */
@@ -428,14 +440,28 @@ footer a:hover{
 .wrapper {
     text-align: center;
 }
+@media only screen and (max-width:600px ) {
 /* mobile style */
 .carousel-cell {
     width: 100%;
     text-align: center;
   }
 
+.head{
+    padding-bottom:0.5rem;
+    padding-top:1rem;
+    align-content:unset;
+}
+ 
+.container.head{
+    padding:0 2%;
+    margin:0 auto;
+    width:100%;
+}
+
+}
 /* max width:1240px */
-@media screen and (min-width:600px ) {
+@media only screen  and (min-width:600px ) {
     html{
         font-size:16px;
     }
@@ -445,11 +471,11 @@ footer a:hover{
     }
 
 
-    /* .wrapper{
-        max-width:720px;
-    } */
+    .wrapper{
+        max-width: 720px;
+    }
 
-    .signup-form{
+    .sign-up{
         width:67%;
     }
 
@@ -501,4 +527,14 @@ footer a:hover{
     color: #e2574c;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  @media only screen and (min-width:1240px ) {
+      .wrapper {
+          width: 720px;
+      }
+
+      .container {
+          max-width: 1240px;
+      }
   }
