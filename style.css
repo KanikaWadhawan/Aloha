@@ -471,7 +471,7 @@ footer a:hover{
     width: 100%;
     text-align: center;
   }
-  
+
 /* mobile style */
 @media only screen and (max-width:600px ) {
 
@@ -566,7 +566,7 @@ section{
     padding:0;
     margin: 0;
     font-size: 1.15rem;
-    text-align: center;
+    /* text-align: center; */
 }
 .signup-banner .wrapper.container form{
     padding:0;
@@ -686,6 +686,10 @@ font: normal normal normal 14px/1 FontAwesome;
         flex-wrap:nowrap;
     }
 
+    .nav-site{
+        align-self: center;
+        flex: 1 0 auto;
+    }
 
     .wrapper{
         max-width: 720px;
@@ -727,7 +731,7 @@ font: normal normal normal 14px/1 FontAwesome;
         width: 25%;
       }
 
-  }
+ 
    
   .product-type{
     font-size: .75rem;
@@ -748,6 +752,68 @@ font: normal normal normal 14px/1 FontAwesome;
     margin-bottom: 1rem;
   }
 
+   .updates{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 51px;
+   }
+
+   .items-men {
+  
+     height:300px; 
+     flex: 2 0 50%;
+     /* flex-basis: 50%; */
+    width:50%;
+     
+  }
+
+  .items-trends {
+    
+    height:300px; 
+    flex: 1 0 25%;
+    /* flex-basis: 25%; */
+    width:25%;
+}
+
+.items-glasses {
+    
+     height:300px; 
+   flex: 1 0 25%;
+   /* flex-basis: 25%; */
+   width:25%;
+}
+
+.items-sales {
+    
+    height:300px; 
+    flex: 1 0 25%;
+    /* flex-basis: 25%; */
+    width:25%;
+   
+}
+
+.items-bags {
+   
+    height:300px; 
+    flex: 1 0 25%;
+    /* flex-basis: 25%; */
+    width:25%;
+}
+
+.items-womens{
+   
+     height:300px; 
+    flex: 2 0 50%;
+    /* flex-basis: 50%; */
+    width:50%;
+  
+  }
+  .signup-banner{
+    margin-bottom: 8px;
+  }
+
+
+}
   @media only screen and (min-width:1240px ) {
       .wrapper {
           width: 720px;
@@ -755,6 +821,14 @@ font: normal normal normal 14px/1 FontAwesome;
 
       .container {
           max-width: 1240px;
+      }
+      .signup-banner{
+        margin-bottom: 8px;
+      }
+      .about{
+        padding-left: 335px;
+        padding-right: 305px;
+        padding-top: 4px;
       }
   }
 
