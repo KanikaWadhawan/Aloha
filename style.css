@@ -118,6 +118,9 @@ a:hover{
 .wrapper.container {
     margin: 0 auto;
     padding: 0 2%;
+    padding-left: 0px;
+    padding-right: 0px;
+
 }
 
 /* .hero-banner p {
@@ -817,11 +820,14 @@ font: normal normal normal 14px/1 FontAwesome;
   @media only screen and (min-width:1240px ) {
       .wrapper {
           width: 720px;
-      }
+          
+        }
 
       .container {
           max-width: 1240px;
       }
+
+
       .signup-banner{
         margin-bottom: 8px;
       }
