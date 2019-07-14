@@ -1,9 +1,10 @@
+/* Extra reseting*/
+
 * {
     box-sizing: border-box;
 }
 
-
-/* Extra reseting*/
+/* Basic settings for the page */
 img{
     max-width: 100%;
     height:auto;
@@ -14,22 +15,15 @@ html {
     scroll-behavior: smooth;
   }
 
-  /* *, *:before, *:after {
-    box-sizing: inherit;
-  } */
-
-/* Basic settings for the page */
 p{
     font-size: 16px;
     text-align: center;
 }
 
-
 html body{
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     font-weight:400;
-    /* font-style:normal; */
     color:#2d2d2d;
 }
 
@@ -37,13 +31,14 @@ h1, h2, h3{
     font-family:'Playfair Display', Arial, sans-serif;
     font-weight:400;
     color:#2d2d2d;
-    /* font-style:normal; */
+    
 }
 
 a:link {
     text-decoration: none;
     line-height: 1.5;
   }
+
 /* Header with the logo,links and cart icon  */
 .aloha-logo{
     flex-basis: 20%;
@@ -70,20 +65,17 @@ a:link {
 }
 
 .links li{
-    
     display:inline;
     font-size:18px;
     text-transform: uppercase;
     padding: 1px 2px;
     margin-left: 0px;
     text-decoration: none;
-    margin: 16px;
-    
+    margin: 16px;  
 }
 
 a{ 
     color:#e2574c;
-   
   }
   
 a:hover{
@@ -108,71 +100,39 @@ a:hover{
     text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-/* .container{
-    max-width: 1240px;
-    /* margin: 0 auto; */
-    /* margin: 0 7%; */
-
-/* } */
-
 .wrapper.container {
     margin: 0 auto;
     padding: 0 2%;
     padding-left: 0px;
     padding-right: 0px;
-
 }
-
-/* .hero-banner p {
-    /* 
-    
-     */
-    
-    /* margin:0, auto;
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center; */
-    /* line-height: 1; */
-    
-     
-/* }  */
 
 .new-collection{
     text-align: center;
-
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
-   
     color:white;
     text-transform: uppercase;
-     /* padding:50px;   */
-    
-    
 }
 
 .season{
     text-align: center;
     font-size: 42px;
     color:white;
-   
 }
 
-/* About section */
+/* About Aloha section */
 
-  .italic{ 
+.italic{ 
     margin: 30px auto;  
     text-align: center;
     font-size:  2.25rem;;
     font-style:italic;
-
 }
 
 .bold{
     font-weight: bold;
     font-style:normal;
-    
 }
 
 .about{
@@ -180,106 +140,66 @@ a:hover{
     font-family: Raleway Web,sans-serif;
     font-size: 1.18rem;
     line-height: 2;
-    /* margin: 20px auto; */
-    
     margin-bottom: 45px;
     margin-top: 0px;
-
     height: 70px;
     padding: 1rem 0;
     padding-right: 40px;
     padding-left: 40px;
 }
     
+/* Product Categories section */
 
-
-
-
-/* Categories section */
 .categories{
   padding: 0;
   margin: 0;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
-  
-  /* justify-content:space-between; */
-  
-  /* align-items:flex-start;
-  align-content:space-between; */
 }
 
 .items{
-  
-    /* padding: 5px; */
-   
-    /* margin-top: 10px; */
-    
     line-height: 150px;
     color: white;
     font-weight: bold;
-    
     text-align: center;
-    
-   /* justify-content:center;*/
     align-items:center; 
-
-    /* margin: 5px; */
-    
     border: 5px solid white;
     height: 25vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
  
-    .items p{
-        font-size:2.4rem;
-    }
+.items p{
+    font-size:2.4rem;
+}
 
-  .items-men {
+.items-men {
     background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
     url(images/mens-category.jpg) no-repeat 50% ;
     background-size: cover,cover;
-     height:300px; 
-     flex: 2 0 100%;
-     flex-basis: 50%;
-     /* flex-grow: 2;
-     flex-shrink: 0;
-     flex-basis: 100%;
-     height: 50vw; */
-     /* max-width: 100%; */
-     
-  }
+    height:300px; 
+    flex: 2 0 100%;
+    flex-basis: 50%;
+}
 
-  .items-trends {
+.items-trends {
     background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
     url(images/trends-category.jpg) no-repeat 50% ;
     background-size: cover,cover;
     height:300px; 
     flex: 1 0 50%;
     flex-basis: 25%;
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    width: 50%;
-    height: 50vw; */
-    /* max-width: 50%; */
-    
 }
 
 .items-glasses {
     background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
     url(images/glasses-category.jpg) no-repeat 50% ;
     background-size: cover,cover;
-     height:300px; 
-   flex: 1 0 50%;
-   flex-basis: 25%;
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    width: 50%;
-    height: 50vw; */
-    /* max-width: 50%; */
+    height:300px; 
+    flex: 1 0 50%;
+    flex-basis: 25%;
 }
 
 .items-sales {
@@ -289,11 +209,6 @@ a:hover{
     height:300px; 
     flex: 1 0 50%;
     flex-basis: 25%;
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    /* flex-basis: 25%; */
-    /* width: 50%;
-    height: 50vw; */ 
 }
 
 .items-bags {
@@ -303,35 +218,27 @@ a:hover{
     height:300px; 
     flex: 1 0 50%;
     flex-basis: 25%;
-    /* flex-grow: 1;
-    flex-shrink: 1; */
-    /* flex-basis: 25%; */
-    /* width: 50%;
-    height: 50vw; */
 }
 
 .items-womens{
     background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
     url(images/womens-category.jpg) no-repeat 50% ;
     background-size: cover,cover;
-     height:300px; 
+    height:300px; 
     flex: 2 0 100%;
     flex-basis: 50%;
-    /* flex-grow: 2;
-     flex-shrink: 0;
-     flex-basis: 100%;
-     height: 50vw; */
-  }
-  .categories a{
-    color:white;
-    /* font-size: 14px; */
 }
+
+.categories a{
+    color:white;
+}
+
 .categories a:hover{
     color: #f5ebc6;
 }
-/* Most loved Section */
 
 /* Sign-up banner Section */
+
 .signup-banner{
     background: 
       
@@ -339,8 +246,6 @@ a:hover{
       url(images/wave-bkgd.jpg)  repeat-x bottom ;
       background-size: cover, cover;
       min-height: 300px;
-      
-   
 }
 
 .update-head{
@@ -349,12 +254,10 @@ a:hover{
     font-size: 2.25rem;
     font-style:italic;
     color:white;
-    
     padding-top: 48px;
-
 }
-.updates{
 
+.updates{
     font-size: 1.2rem;
     line-height: 2;
     margin: 20px auto;
@@ -362,17 +265,14 @@ a:hover{
     padding: 1rem 0;
     color:white;
     text-shadow: 2px 2px 4px hsla(0,0%,39%,0.8);
-
 }
 
 .sign-up{
-
     display: block;
     margin: 2rem auto 0 ;
     position: relative;
     width: 90%;
     text-align: center;
-
 }  
 
 input[type=submit] {
@@ -380,12 +280,9 @@ input[type=submit] {
     border-radius: 25px;
     background-color: #e2574c;
     color: white; 
-    /* bottom: 0.25rem; */
-    /* margin-right: 0px; */
     position: absolute;
     top:0.25rem;
     right:0.25rem;
-    /* left:35.95rem; */
     padding:0.5rem 1.5rem;
     font-weight: 700;
     cursor: pointer;
@@ -397,12 +294,6 @@ input[type=email] {
     border-radius: 25px;
     color: black;
     width:100%;
-    /* padding-right: 20px;  */
-
-    /* line-height:32px; */
-    /* padding-top: 8px; */
-    /* padding-bottom: 8px; */
-    /* padding-left: 28px; */
     padding-right: 150px;
     padding: 0.75rem 1.85rem;
     outline: none;
@@ -412,20 +303,27 @@ input[type=email] {
     text-shadow: 2px 2px 4px hsla(0,0%,39%,0.8);
 }
 
-/* Footer Section */
-.footer-banner{
+/* Most Loved Section */
 
+.carousel-cell p {
+    width: 100%;
+    text-align: center;
+  }
+
+/* Footer Section */
+
+.footer-banner{
     background-color:#242424;
     color:white;
     font-family: Playfair Display Web,serif;
     padding: 4rem 0;
     height: 20vw;
-    /* text-align: left; */
 }
 
 .footer-banner p{
     text-align:left;
 }
+
 .footer-banner p a{
     text-decoration: underline;
 }
@@ -433,10 +331,9 @@ input[type=email] {
 .address{
     color:#969696;
 }
-footer a{
 
+footer a{
     color:white;
-   
 }
 
 footer a:hover{
@@ -462,6 +359,7 @@ footer a:hover{
 .social li{
    text-decoration: none;
 }
+
 .network {
     display: inline;
     line-height: 1.5;
@@ -470,28 +368,26 @@ footer a:hover{
 .wrapper {
     text-align: center;
 }
-.carousel-cell p {
-    width: 100%;
-    text-align: center;
-  }
 
-/* mobile style */
+
+/* Moblie Preview Layout */
+
 @media only screen and (max-width:600px ) {
 
 p{
     font-size: 14px;
     text-align: center;
 }
+
 .carousel-cell {
     width: 100%;
     text-align: center;
-  }
+}
 
 .head{
     padding-bottom:0.5rem;
     padding-top:1rem;
     align-content:unset;
-      
 }
  
 .container.head{
@@ -522,16 +418,18 @@ p{
    padding: 0 ;
    margin:0 7px;
 }
+
 section{
     padding: 3rem 0;
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    /* padding-bottom: 80px; */
 }
+
 .about-aloha{
     padding-top: 12px;
 }
+
 .about{
     padding-top: 3px;
     padding-left: 0px;
@@ -541,11 +439,12 @@ section{
 
 .categories a{
     color:white;
-    /* font-size: 14px; */
 }
+
 .categories a:hover{
     color: #f5ebc6;
 }
+
 .categories p{
     font-size: 1.5rem;
 }
@@ -569,12 +468,13 @@ section{
     padding:0;
     margin: 0;
     font-size: 1.15rem;
-    /* text-align: center; */
 }
+
 .signup-banner .wrapper.container form{
     padding:0;
     margin-top:100px;
 }
+
 .footer-banner{
     height:unset;
 }
@@ -606,14 +506,10 @@ font: normal normal normal 14px/1 FontAwesome;
 }
 .social li{
     display: inline;
-  
-    
 }
 
 .social i{
-   
-        min-width: 20px;
-      
+   min-width: 20px;
 }
 
 .wrapper.updates p{
@@ -622,7 +518,6 @@ font: normal normal normal 14px/1 FontAwesome;
 
 .categories{
     display: flex;
-    /* -ms-flex-wrap: wrap; */
     flex-wrap: wrap;
     text-align: center;
 }
@@ -630,15 +525,12 @@ font: normal normal normal 14px/1 FontAwesome;
 .items-men {
      border-left: 0;
     border-right: 0;
-    /* -ms-flex: 2 0 100%; */
-    /* flex: 2 0 100%; */
     flex-grow: 2;
     flex-shrink: 0;
     flex-basis: 100%;
     width: 100%; 
-    /* height: 50vw; */
-    
 }
+
 .items-womens{
     flex-grow: 2;
     flex-shrink: 0;
@@ -646,151 +538,139 @@ font: normal normal normal 14px/1 FontAwesome;
     width: 100%; 
 }
 
-
 .items-trends  {
-     /* flex: 1 0 50%; */
      flex-grow: 1;
      flex-shrink: 1;
      flex-basis:50%;
-    width: 50%; 
-    /* height: 50vw; */
-    
+     width: 50%; 
 }
 
 .items-glasses{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis:50%;
-   width: 50%; 
+    width: 50%; 
 }
+
 .items-bags{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis:50%;
-   width: 50%; 
+    width: 50%; 
 }
+
 .items-sales{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis:50%;
-   width: 50%; 
+    width: 50%; 
 }
 
-
-
 }
-/* max width:1240px */
+
+/* Tablet Preview Layout: max width:1240px */
+
 @media only screen  and (min-width:600px ) {
-    html{
+html{
         font-size:16px;
-    }
+}
 
-    .head{
+.head{
         flex-wrap:nowrap;
-    }
+}
 
-    .nav-site{
+.nav-site{
         align-self: center;
         flex: 1 0 auto;
-    }
+}
 
-    .wrapper{
+.wrapper{
         max-width: 720px;
-    }
+}
 
-    .sign-up{
+.sign-up{
         width:67%;
-    }
+}
 
-    .footer-banner {
+.footer-banner {
         text-align: left;
-    }
-    .footer-banner .container{
+}
+
+.footer-banner .container{
     display: flex;
     justify-content: space-between;
+}
 
-    }
-
-    .footer-banner .social{
+.footer-banner .social{
         margin-top: 0;
         padding-right: 2rem;
-        
-    }
-    .footer-banner{
+}
+  
+.footer-banner{
         height:unset;
-    }
+}
 
-    .social li{
+.social li{
         display:block;
-       
-    }
+}
 
-    .network{
+.network{
         padding-left: 14px;
         line-height: 2;
-    }
+}
 
-    .carousel-cell {
+.carousel-cell {
         width: 25%;
-      }
+ }
 
- 
-   
-  .product-type{
+.product-type{
     font-size: .75rem;
     margin-bottom: .75rem;
     text-transform: uppercase;
     color: #969696;
     font-weight: 700;
-  }
+}
 
-  .price{
+.price{
     color: #969696;
     font-weight: 700;
-  }
+}
 
-  h3{
+h3{
     color: #e2574c;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-  }
+}
 
-   .updates{
+.updates{
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 51px;
-   }
+}
 
-   .items-men {
-  
-     height:300px; 
-     flex: 2 0 50%;
-     /* flex-basis: 50%; */
+.items-men {
+    height:300px; 
+    flex: 2 0 50%;
     width:50%;
-     
-  }
+}
 
-  .items-trends {
-    
+.items-trends {
     height:300px; 
     flex: 1 0 25%;
-    /* flex-basis: 25%; */
     width:25%;
 }
 
 .items-glasses {
     
-     height:300px; 
-   flex: 1 0 25%;
-   /* flex-basis: 25%; */
-   width:25%;
+    height:300px; 
+    flex: 1 0 25%;
+    width:25%;
 }
 
 .items-sales {
     
     height:300px; 
     flex: 1 0 25%;
-    /* flex-basis: 25%; */
     width:25%;
    
 }
@@ -799,7 +679,6 @@ font: normal normal normal 14px/1 FontAwesome;
    
     height:300px; 
     flex: 1 0 25%;
-    /* flex-basis: 25%; */
     width:25%;
 }
 
@@ -807,34 +686,37 @@ font: normal normal normal 14px/1 FontAwesome;
    
      height:300px; 
     flex: 2 0 50%;
-    /* flex-basis: 50%; */
     width:50%;
   
-  }
-  .signup-banner{
-    margin-bottom: 8px;
-  }
+}
 
+.signup-banner{
+    margin-bottom: 8px;
+}
 
 }
-  @media only screen and (min-width:1240px ) {
-      .wrapper {
-          width: 720px;
+/* Desktop Preview Layout */
+
+@media only screen and (min-width:1240px ) {
+.wrapper {
+      width: 720px;
           
-        }
+}
 
-      .container {
-          max-width: 1240px;
-      }
+.container {
+      max-width: 1240px;
+}
 
 
-      .signup-banner{
-        margin-bottom: 8px;
-      }
-      .about{
-        padding-left: 335px;
-        padding-right: 305px;
-        padding-top: 4px;
-      }
-  }
+.signup-banner{
+    margin-bottom: 8px;
+}
+
+.about{
+    padding-left: 335px;
+    padding-right: 305px;
+    padding-top: 4px;
+}
+
+}
 
