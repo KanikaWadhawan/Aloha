@@ -1,0 +1,22 @@
+{
+  "name": "aloha_project",
+  "version": "1.0.0",
+  "description": "This is the first Ecommerce website project for the web dev programme at RED Academy, showcasing responsive web development using HTML, CSS and Javascript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KanikaWadhawan/Aloha.git"
+  },
+  "author": "Kanika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KanikaWadhawan/Aloha/issues"
+  },
+  "homepage": "https://github.com/KanikaWadhawan/Aloha#readme",
+  "dependencies": {
+    "@khanacademy/tota11y": "^0.2.0"
+  }
+}

@@ -20,6 +20,7 @@
 
 <body>
     <!-- Header Section -->
+    <a class="screen-reader-text" href="#main">Skip to content</a>
     <header class="container head">
         <div class="aloha-logo">
             <img src="images/aloha-logo.svg" alt="aloha-logo" />
@@ -29,7 +30,7 @@
         </div>
         <nav class="nav-site">
             <ul class="links">
-                <li><a href="#one">About</a></li>
+                <li><a href="#one">About-Aloha</a></li>
                 <li><a href="#two">Shop</a></li>
                 <li><a href="#three">Featured</a></li>
                 <li><a href="#four">Updates</a></li>
@@ -47,9 +48,10 @@
         </div>
     </section>
     <!-- About Aloha Section-->
+    <main id="main" class="site-main" tabindex="-1">
     <section>
         <div class="about-aloha">
-            <h2 id="one" class="italic">Hand-Crafted <span class="bold">Styles </span></h2>
+            <h1 id="one" class="italic">Hand-Crafted <span class="bold">Styles </span></h2>
             <p class="about">Aloha Aparel Co. sells only the finest ready-to-travel clothing. Browse our current
                 section of products or sign-up for updates below.</p>
         </div>
@@ -162,11 +164,12 @@
                 sales, and get free style tips from our blog. Unsubscribe at any time.</p>
             <form id="signup-form" class="sign-up" action="#">
 
-                <input id="input" type="email" name="email" placeholder="Your Email">
+                <input id="input" type="email" name="email" placeholder="Your Email, e.g: abc@gmail.com">
                 <input id="subscribe" type="submit" value="Subscribe">
             </form>
         </div>
     </section>
+</main>
     <!-- Footer Section-->
     <footer class="footer-banner ">
         <div class="footer-contact container">
@@ -192,6 +195,7 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="tota11y.min.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    color:white;
+    background: red;
+ }
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
+
+ #main[tabindex="-1"]:focus {
+    outline: 0;
+ }
 /* Basic settings for the page */
 img{
     max-width: 100%;
@@ -75,7 +97,7 @@ a:link {
 }
 
 a{ 
-    color:#e2574c;
+    color:#db3a26;
   }
   
 a:hover{
@@ -111,14 +133,14 @@ a:hover{
     text-align: center;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
-    color:white;
+    color:#767676;
     text-transform: uppercase;
 }
 
 .season{
     text-align: center;
     font-size: 42px;
-    color:white;
+    color:#949494;
 }
 
 /* About Aloha section */
@@ -627,7 +649,7 @@ html{
     font-size: .75rem;
     margin-bottom: .75rem;
     text-transform: uppercase;
-    color: #969696;
+    color: #767676;
     font-weight: 700;
 }
 
