@@ -55,6 +55,11 @@ h1, h2, h3{
     color:#2d2d2d;
     
 }
+.season{
+    font-family: 'Playfair Display Web',serif;
+    font-weight: 400;
+    text-transform: none;
+}
 
 a:link {
     text-decoration: none;
@@ -63,10 +68,15 @@ a:link {
 
 /* Header with the logo,links and cart icon  */
 .aloha-logo{
-    flex-basis: 20%;
+    flex-basis: 15%;
 }
 
 .head{
+    top:0;
+    width: 1263px;
+    position: fixed; 
+    background:white;
+    padding: 20px 0;
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -76,8 +86,9 @@ a:link {
 }
 
 .cart-icon{
-    flex-basis: 10%;
+    flex-basis: 5%;
     order: 2;
+    text-align: right;
 }
 
 .nav-site{
@@ -111,11 +122,12 @@ a:hover{
       url(images/banner-girl.png)  no-repeat center 70px ,
       url(images/flower-bkgd.jpg) repeat-x center top ;
       background-size: cover,contain, cover;
-      height: 400px;
+      height: 500px;
 }
 
 .align-text {
     justify-content: center;
+    font-weight: 800;
     align-items: center;
     display: flex;
     margin-bottom: 24px;
@@ -388,6 +400,15 @@ footer a:hover{
 }
 
 .wrapper {
+    text-align: center;
+}
+
+.main-carousel{
+    text-align:center;
+}
+
+.carousel-cell {
+    width: 100%;
     text-align: center;
 }
 
@@ -723,10 +744,6 @@ h3{
 .wrapper {
       width: 720px;
           
-}
-
-.container {
-      max-width: 1240px;
 }
 
 

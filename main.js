@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const text = document.getElementById("input");
     const trimVal = text.value.trim();
-    if (trimVal == "") {
+    if (trimVal === "") {
       alert("Please submit a valid email address.");
     }
 
